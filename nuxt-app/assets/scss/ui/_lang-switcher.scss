@@ -1,0 +1,18 @@
+.lang-switcher {
+    display: flex;
+    align-items: center;
+
+    .dropdown-menu {
+        text-transform: uppercase;
+
+        a {
+            display: block;
+            padding: 0.25rem 1rem;
+        }
+    }
+}
+
+.lang-flag {
+    width: 16px;
+    margin: 0 9px 0 0;
+}

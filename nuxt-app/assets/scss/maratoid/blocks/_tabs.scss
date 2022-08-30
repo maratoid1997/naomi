@@ -1,0 +1,31 @@
+.tabsWrapper {
+    display: flex;
+    justify-content: center;
+    .tabs {
+        display: flex;
+        border: 1px solid rgba(108, 134, 133, 0.2);
+        border-radius: 100px;
+        list-style: none;
+        margin-bottom: 0;
+        .tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+            line-height: 21px;
+            color: #6C8685;
+            width: 121px;
+            height: 42px;
+            cursor: pointer;
+            &.active, &:hover {
+                color: #FFFFFF;
+                background-color: #6C8685;
+                border-radius: 100px;
+                transition: all .5s;
+                & + .tab {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}

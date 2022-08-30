@@ -1,0 +1,50 @@
+.mobile-menu {
+    display: block;
+    padding: 20px 15px;
+
+    ul, li, a {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        padding: 20px 0 0 15px;
+
+        a,
+        span {
+            padding-right: 15px;
+        }
+    }
+
+    li {
+        font-size: 1.7rem;
+        color: $black;
+        margin: 0 0 20px 0;
+
+        &.open {
+            color: $green;    
+        }
+
+        &.has-childs {
+            position: relative;
+
+            &:after {
+                content: "\f105";
+                font-family: "fontello";
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 14px;
+                transform: translateY(1px);
+            }
+        }
+
+        &.open {
+            color: $green;
+
+            > ul {
+                display: block;
+            }
+        }
+    }
+}

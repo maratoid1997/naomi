@@ -1,0 +1,162 @@
+.cart-content {
+    [class*="col-"] {
+        margin-bottom: 2.4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// -- products table
+.products-table {
+    margin-bottom: 5.4rem;
+
+    table {
+        min-width: 900px;
+    }
+}
+
+.data-table {
+    position: relative;
+    overflow-x: auto;
+
+    &.loading {
+        user-select: none;
+        cursor: wait;
+
+        button {
+            pointer-events: none;
+        }
+    }
+
+    table {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    thead {
+        border-bottom: 1px solid $dark-grey;
+    }
+
+    tr {
+        border-bottom: 1px solid $dark-grey;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    th,
+    td {
+        padding: 2rem 4rem;
+        border-right: 1px solid $dark-grey;
+
+        &:last-child {
+            text-align: center;
+            border: none;
+        }
+    }
+
+    th {
+        font-size: 1.8rem;
+        font-weight: normal;
+        white-space: nowrap;
+    }
+
+    td {
+        font-family: "SF Pro Light", sans-serif;
+    }
+
+    .data-name {
+        max-width: 300px;
+    }
+
+    .data-image {
+        text-align: center;
+
+        img {
+            max-width: 14rem;
+        }
+    }
+
+    .data-model {
+        white-space: nowrap;
+    }
+
+    .data-price {
+        display: inline-flex;
+
+        .adder {
+            margin: 0 .5rem;
+        }
+
+        span {
+            display: inline-flex;
+        }
+
+        i {
+            font-size: 1.2rem;
+            margin-left: .3rem;
+        }
+    }
+
+    .remove-data {
+        font-size: 2.4rem;
+        padding: .5rem 1rem;
+        color: $red;
+        background-color: transparent;
+    }
+}
+
+// -- summary table
+.summary-table {
+    td:last-child {
+        text-align: right;
+    }
+}
+
+@media (max-width: 1600px) {
+    // -- products table
+    .data-table {
+        th, td {
+            padding: 1rem 1.5rem;
+        }
+    
+        th {
+            font-size: 1.6rem;
+        }
+    
+        .data-image {
+            img {
+                max-width: 10rem;
+            }
+        }
+
+        .remove-data {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    // -- products table
+    .products-table {
+        margin-bottom: 4.8rem;
+    }
+
+    .data-table {
+        .data-image {
+            img {
+                max-width: 8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .products-table {
+        margin-bottom: 2.4rem;
+    }
+}

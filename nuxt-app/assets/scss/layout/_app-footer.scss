@@ -1,0 +1,181 @@
+.footer {
+    color: #fff;
+    background-color: $black;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// -- footer top
+.footer-top {
+    padding: 9rem 0;
+}
+
+.company-info {
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .company-desc {
+        max-width: 28rem;
+        margin: 2rem 0;
+        opacity: .5;
+    }
+}
+
+.footer-links,
+.footer-contacts {
+    display: block;
+
+    &__label {
+        font-family: "SF Pro Medium", sans-serif;
+        font-size: 1.7rem;
+        display: block;
+        color: #fff;
+        margin: 0 0 3.8rem 0;
+    }
+
+    &__item {
+        display: block;
+        font-size: 1.5rem;
+        margin: 0 0 1.8rem 0;
+        opacity: .5;
+
+        i {
+            color: $green;
+            margin: 0 1.5rem 0 0;
+        }
+    }
+}
+
+// -- footer bottom
+.footer-bottom {
+    .row {
+        align-items: center;
+        position: relative;
+        padding: 3rem 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 12px;
+            right: 12px;
+            height: 1px;
+            background: #3A373E;
+        }
+    }
+}
+
+.social-links {
+    &__item {
+        font-size: 1.8rem;
+        margin: 0 3rem 0 0;
+    }
+}
+
+.card-types {
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        width: 5rem;
+        margin-left: 2.4rem;
+    }
+}
+
+@media (max-width: 1367px) {
+    .footer-top {
+        padding: 6rem 0;
+    }
+
+    .footer-links,
+    .footer-contacts {
+
+        &__label {
+            font-size: 1.6rem;
+            margin: 0 0 2.4rem 0;
+        }
+
+        &__item {
+            font-size: 1.4rem;
+            margin: 0 0 1.2rem 0;
+
+            i {
+                margin: 0 1.2rem 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    // -- footer top
+    .footer-top {
+        padding: 4rem 0 1.6rem 0;
+
+        [class*="col"] {
+            margin-bottom: 3rem;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .company-info {
+        .company-desc {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-bottom {
+        .row {
+            padding: 1.2rem 0;
+
+            &:before {
+                left: 8px;
+                right: 8px;
+            }
+        }
+
+        [class*="col"] {
+            padding: 1rem 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    // -- footer top
+    .footer-top {
+        .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            &:last-child {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    // -- footer bottom
+    
+    .copyrights {
+        font-size: 1.4rem;
+    }
+
+    .card-types {
+        img {
+            width: 4rem;
+            margin-left: 2rem;
+        }
+    }
+
+}

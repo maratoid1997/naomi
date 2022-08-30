@@ -1,0 +1,260 @@
+.blackout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(108, 134, 133, 0.8);
+    z-index: 2;
+    &.active {
+        display: block;
+        #customModal {
+            display: block;
+        }
+    }
+
+}
+.customModal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 888px;
+    padding: 31px 40px 25px 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 33px;
+        color: #363B46;
+        margin-bottom: 0;
+    }
+    &__close {
+        cursor: pointer;
+    }
+    &__subhead {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 17px;
+        padding-bottom: 27px;
+        border-bottom: 1px solid #E9EBEF;
+        &-left {
+            display: flex;
+            .basketWrapper {
+                span {
+                    bottom: 0;
+                }
+            }
+            .basketInfoWrapper {
+                margin-left: 30px;
+            }
+        }
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        border-bottom: 1px solid #E9EBEF;
+        &-left {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            button {
+                margin: 25px 0 0 25px;
+                font-weight: normal;
+                line-height: 21px;
+                padding: 0 25px;
+                height: 42px;
+                color: #FFFFFF;
+                background-color: #6C8685;
+                border-radius: 100px;
+                border: none;
+            }
+        }
+        &-imgWrapper {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #E9EBEF;
+            border-radius: 10px;
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        &-productDescription {
+            margin-left: 25px;
+            padding-top: 20px;
+        }
+        &-productName {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            color: #363B46;
+            margin-bottom: 9px;
+        }
+        &-productStock {
+            font-weight: normal;
+            line-height: 21px;
+            color: #6C8685;
+            padding: 10.5px 16px;
+            background-color: #E1F2F2;
+            border-radius: 100px;
+        }
+        &-sum {
+            margin-top: 9px;
+        }
+        &-price {
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 30px;
+            color: #363B46;
+            img {
+                width: 20px;
+                height: 17px;
+            }
+        }
+        &-bonus {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 24px;
+            color: #6C8685;
+            margin-top: 4px;
+            svg {
+                margin-left: 8px;
+                path {
+                    fill: #6C8685;
+                }
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    &__linkQuestionnaire {
+        display: flex;
+        align-items: center;
+        padding: 10.5px 27px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #2690B1;
+        background-color: #BCE8F7;
+        border-radius: 100px;
+        text-decoration: none;
+        svg {
+            margin-left: 8px;
+            transform: rotate(180deg);
+            path {
+                fill: #2690B1;
+            }
+        }
+    }
+}
+.customModalQuestionnaire {
+    display: none;
+    width: 1024px;
+    &__main {
+        margin-top: 26px;
+    }
+    &__wrapper {
+        & + .customModalQuestionnaire__wrapper {
+            margin-top: 33px;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #363B46;
+        margin-bottom: 19px;
+    }
+    &__content {
+        display: flex;
+        border: 1px solid #D8DDE7;
+        border-radius: 100px;
+        padding: 10px 17px;
+        &.block {
+            border-radius: 20px;
+            .customModalQuestionnaire__inner {
+                flex-direction: column;
+                align-items: unset;
+                label {
+                    & + label {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        & + .customModalQuestionnaire__inner {
+            padding-left: 17.5px;
+            border-left: 1px solid #D8DDE7;
+        }
+    }
+    input {
+        display: none;
+        &:checked {
+            & + label {
+                &:before {
+                    border: 5px solid #243d3c;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    label {
+        position: relative;
+        font-weight: normal;
+        line-height: 21px;
+        color: #363B46;
+        opacity: 0.4;
+        padding-left: 25px;
+        margin: 0;
+        cursor: pointer;
+        width: max-content;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            opacity: 0.4;
+            border-radius: 100%;
+            border: 1px solid #363B46;
+        }
+    }
+    .btnWrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        button {
+            font-weight: normal;
+            line-height: 21px;
+            color: #FFFFFF;
+            padding: 10.5px 25px;
+            border: none;
+            background-color: #6C8685;
+            border-radius: 100px;
+        }
+    }
+}
+

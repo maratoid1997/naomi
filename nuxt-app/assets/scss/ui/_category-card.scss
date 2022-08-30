@@ -1,0 +1,41 @@
+.category-card {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &__image {
+        display: block;
+        position: relative;
+        height: 0;
+        padding-bottom: 85%;
+        margin: 0 0 1rem 0;
+
+        img {
+            height: 100;
+        }
+    }
+
+    &__title {
+        color: $green;
+        margin-top: auto;
+    }
+
+    &:hover {
+        box-shadow: 0 .4rem 1rem rgba($green, 0.15);
+    }
+}
+
+@media (max-width: 575px) {
+    .category-card {
+        padding: 1.5rem 1rem;
+
+        &__title {
+            font-size: 1.4rem;
+        }
+    }
+}

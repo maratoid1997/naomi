@@ -1,0 +1,38 @@
+.breadcrumb {
+    padding: 2rem 0;
+    margin: 0;
+    background-color: transparent;
+
+    &-item {
+        font-family: "SF Pro Light", sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.1rem;;
+        color: $black;
+
+        + .breadcrumb-item {
+            display: inline-flex;
+            align-items: center;
+            padding: 0;
+
+            &:before {
+                content: "\f105";
+                font-family: "fontello";
+                color: $black;
+                padding: 0;
+                margin: 0 .8rem;
+                float: none;
+            }
+        }
+    }
+
+    &-item:last-child {
+        cursor: text;
+
+        a {
+            font-family: "SF Pro Regular", sans-serif;
+            color: $green;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+}

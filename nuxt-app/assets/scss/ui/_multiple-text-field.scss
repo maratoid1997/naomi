@@ -1,0 +1,31 @@
+.multiple-text-field {
+    display: flex;
+
+    + .multiple-text-field {
+        margin: 10px 0;
+    }
+
+    .form-group {
+        position: relative;
+        flex: 1;
+        margin: 0;
+    }
+
+    button {
+        background-color: transparent;
+    }
+
+    .add-field {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        font-size: 22px;
+        padding: 0 10px;
+        transform: translateY(-50%);
+    }
+
+    .remove-field {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}

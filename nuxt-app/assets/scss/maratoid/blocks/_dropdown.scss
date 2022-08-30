@@ -1,0 +1,100 @@
+.dropdown {
+    position: relative;
+    display: flex;
+    color: #363B46;
+    cursor: pointer;
+    &.active {
+        .optionsContainer {
+            height: 117px;
+        }
+        .dropdown__arrowIcon {
+            transform: rotate(0deg);
+        }
+    }
+    .selected {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        cursor: pointer;
+    }
+    &__arrowIcon {
+        margin-left: 10px;
+        transform: rotate(-90deg);
+        transition: all 0.5s;
+    }
+    &__currencyIcon {
+        margin-right: 10px;
+    }
+    .optionsContainer {
+        position: absolute;
+        top: 47px;
+        left: -32px;
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        background: #FFFFFF;
+        box-shadow: 0 7px 15px rgb(54 59 70 / 15%);
+        border-radius: 0 0 10px 10px;
+        transition: all 0.5s;
+        overflow: hidden;
+        z-index: 2;
+        .option {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            padding: 16.3px 28.7px;
+            color: #363B46;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover {
+                color: #FFFFFF;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    &_currencyUnit {
+        margin-left: 50px;
+        .optionsContainer {
+            left: -13px;
+            .option {
+                padding: 16.3px 55px;
+            }
+        }
+    }
+    &_user {
+        margin-left: 50px;
+        &.active {
+            .optionsContainer {
+                height: 176px;
+            }
+        }
+        .optionsContainer {
+            left: unset;
+            right: 0;
+            .option {
+                white-space: nowrap;
+            }
+        }
+    }
+    &_headerNav {
+        &.active {
+            .optionsContainer {
+                height: 138px;
+            }
+        }
+        .selected {
+            font-size: 20px;
+            line-height: 26px;
+            color: #363B46;
+        }
+        .optionsContainer {
+            top: 48px;
+            .option {
+                padding: 10px 15px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+

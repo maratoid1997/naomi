@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "SF Pro Light";
+    src: local("SF Pro Light"),
+        url("../fonts/SF-Pro-Light.woff"),
+        url("../fonts/SF-Pro-Light.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Regular";
+    src: local("SF Pro Regular"),
+        url("../fonts/SF-Pro-Regular.woff"),
+        url("../fonts/SF-Pro-Regular.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Medium";
+    src: local("SF Pro Medium"),
+        url("../fonts/SF-Pro-Medium.woff"),
+        url("../fonts/SF-Pro-Medium.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Bold";
+    src: local("SF Pro Bold"),
+        url("../fonts/SF-Pro-Bold.woff"),
+        url("../fonts/SF-Pro-Bold.woff2");
+    font-display: swap;
+}

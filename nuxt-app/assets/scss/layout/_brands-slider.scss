@@ -1,0 +1,42 @@
+.brands-slider {
+    padding: 40px 0;
+    background-color: #fff;
+
+    .swiper-container {
+        padding: 0 3rem;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0 2.4rem;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        border-color: $dark-grey;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        border-color: $dark-grey;
+    }
+}
+
+@media (max-width: 575px) {
+    .brands-slider {
+        .swiper-container {
+            padding: 0;
+        }
+
+        .swiper-slide {
+            padding: 0 1.6rem;
+        }
+    }
+}

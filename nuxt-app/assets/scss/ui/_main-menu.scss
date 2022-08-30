@@ -1,0 +1,125 @@
+.header.scrolling {
+    .menu > li > a,
+    .menu > li > span {
+        padding: 2.8rem 0;
+    }
+}
+
+.menu {
+    > li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 6rem 0 0;
+        transition: 0.2s ease;
+
+        &.has-childs {
+            &:after {
+                content: "\f107";
+                font-family: "fontello";
+                font-size: 14px;
+                display: inline-block;
+                margin: 0 0 0 8px;
+                transform: translateY(1px);
+            }
+        }
+
+        > a,
+        span {
+            padding: 4rem 0;
+        }
+    }
+
+    ul {
+        display: none;
+        min-width: 20rem;
+        padding: 2.4rem 0;
+        background: #fff;
+        box-shadow: 0 -1px 0 0 $grey;
+
+        li {
+            padding: 0 2.8rem 1.8rem 2.8rem;
+
+            &:last-child {
+                padding: 0 2.8rem 0 2.8rem;
+            }
+        }
+    }
+
+    li {
+        color: $black;
+
+        &:hover {
+            color: $green;
+
+            > ul {
+                display: block;
+            }
+        }
+    }
+
+    a,
+    span {
+        display: block;
+        font-size: 1.7rem;
+        white-space: nowrap;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: -2.8rem;
+
+    > li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.has-childs {
+            &:after {
+                content: "\f105";
+                font-family: "fontello";
+                font-size: 14px;
+                display: inline-block;
+                transform: translateY(1px);
+            }
+        }
+
+        ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-height: 100%;
+            border-left: 1px solid $grey;
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            padding: 0 40px 0 0;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .menu {
+        > li {
+            margin: 0 4rem 0 0;
+        }
+
+        a {
+            font-size: 1.6rem;
+        }
+    }   
+}
+
+@media (max-width: 991px) {
+    .header.scrolling {
+        .menu > li > a {
+            padding: unset;
+        }
+    }
+}

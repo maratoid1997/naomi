@@ -1,0 +1,110 @@
+.subscribe-to-rss {
+    background: $grey;
+
+    .row {
+        align-items: center;
+    }
+}
+
+.subscribe-info {
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Light", sans-serif;
+
+    &__label {
+        padding: 3.5rem 4rem 3.5rem 0;
+        margin-right: 4rem;
+        border-right: 1px solid $dark-grey;
+
+        p {
+            font-size: 1.7rem;
+            margin: 0 0 .4rem 0;
+            opacity: .7;
+        }
+
+        h3 {
+            font-family: "SF Pro Medium", sans-serif;
+            font-size: 2.6rem;
+            white-space: nowrap;
+        }
+    }
+}
+
+.subscribe-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "\e809";
+        font-family: "fontello";
+        font-size: 1.8rem;
+        color: $green;
+        position: absolute;
+        top: 50%;
+        left: 2.4rem;
+        transform: translateY(-50%);
+    }
+
+    .form-control {
+        height: 5.4rem;
+        line-height: 1.8rem;
+        padding: 1.8rem 2.4rem 1.8rem 6.2rem;
+        border-radius: 3px 0 0 3px;
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 5.4rem;
+        height: 5.4rem;
+        color: #fff;
+        padding: 0;
+        background-color: $green;
+        border: 1px solid $green;
+
+        i {
+            margin: 0;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: darken($green, 5%);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .subscribe-info {
+        &__label {
+            padding: 2.4rem 2.4rem 2.4rem 0;
+            margin-right: 2.4rem;
+
+            p {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        &__details {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .subscribe-to-rss {
+        padding: 0 0 16px 0;
+    }
+
+    .subscribe-info {
+        &__label {
+            border: none;
+        }
+    }
+}

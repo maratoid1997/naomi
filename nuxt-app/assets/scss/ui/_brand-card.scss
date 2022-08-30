@@ -1,0 +1,14 @@
+.brand-card {
+    background: #fff;
+    border-radius: 3px;
+    padding: 2rem 0;
+
+    &__logo {
+        display: block;
+        position: relative;
+        height: 0;
+        max-width: 55%;
+        padding-bottom: 56.4%;
+        margin: 0 auto;
+    }
+}

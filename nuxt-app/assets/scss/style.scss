@@ -1,0 +1,80 @@
+@import "./bootstrap/bootstrap";
+
+// Core
+//@import "variables";
+//@import "fonts";
+//@import "default";
+//@import "helpers";
+
+// Layout
+//@import "./layout/app-header";
+//@import "./layout/side-drawer";
+//@import "./layout/brands-slider";
+//@import "./layout/subscribe-to-news";
+//@import "./layout/breadcrumbs";
+//@import "./layout/app-footer";
+//@import "./layout/modal-order-status";
+
+// UI
+//@import "./ui/lang-switcher";
+//@import "./ui/currency-switcher";
+//@import "./ui/search-block";
+//@import "./ui/main-menu";
+//@import "./ui/user-favorites";
+//@import "./ui/user-cart";
+//@import "./ui/mobile-menu";
+//@import "./ui/section-header";
+//@import "./ui/special-offer";
+//@import "./ui/product-card";
+//@import "./ui/product-card-inline";
+//@import "./ui/search-product";
+//@import "./ui/advantages";
+//@import "./ui/modal";
+//@import "./ui/fast-by";
+//@import "./ui/category-card";
+//@import "./ui/filters-group";
+//@import "./ui/brand-card";
+//@import "./ui/multiple-text-field";
+
+// Pages
+//@import "./pages/index";
+//@import "./pages/products";
+//@import "./pages/product-inner";
+//@import "./pages/favorite-products";
+//@import "./pages/search";
+//@import "./pages/cart";
+//@import "./pages/checkout";
+//@import "./pages/auth";
+//@import "./pages/profile";
+//@import "./pages/orders";
+//@import "./pages/contact";
+//@import "./pages/404";
+
+// MaRaToiD ------------------------------------------------------------------------------
+@import "maratoid/base/fonts";
+@import "maratoid/base/variables";
+
+@import "maratoid/blocks/allHeader";
+@import "maratoid/blocks/wrapper";
+@import "maratoid/blocks/dropdown";
+@import "maratoid/blocks/hamburger";
+@import "maratoid/blocks/products";
+@import "maratoid/blocks/tabs";
+@import "maratoid/blocks/customModals";
+@import "maratoid/blocks/invalidInput";
+@import "maratoid/blocks/inputWrapper";
+
+@import "maratoid/media/mediaHeader";
+@import "maratoid/media/mediaHamburgerMenu";
+@import "maratoid/media/mediaCustomModals";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FuturaPT';
+}
+
+body {
+    min-width: 320px;
+}

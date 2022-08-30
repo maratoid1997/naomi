@@ -1,0 +1,83 @@
+.inline-product {
+    margin-bottom: 2rem;
+
+    &__img {
+        width: 38%;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__info {
+        width: 62%;
+        padding: 0 0 0 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.7rem;
+    }
+
+    &__price {
+        font-family: "SF Pro Medium", sans-serif;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: $green;
+        margin-bottom: 10px;
+
+        i {
+            display: inline-block;
+            font-size: 75%;
+            transform: translateY(-2px);
+        }
+    }
+
+    .bonus-plus {
+        font-size: 1.5rem;
+        color: $orange;
+        margin-top: .6rem;
+
+        i {
+            display: inline-block;
+            font-size: 80%;
+            transform: translateY(-1px);
+        }
+    }
+
+    .availability {
+        margin: 1rem 0;
+    }
+}
+
+.availability {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: .3rem 1rem;
+    background-color: $dark-grey;
+    border-radius: 3px;
+
+    &.is-available {
+        color: $green;
+        background-color: rgba($green, .2);
+    }
+
+    &.is-unavailable {
+        color: $orange;
+        background-color: rgba($orange, .2);
+    }
+}
+
+@media (max-width: 480px) {
+    .inline-product {
+        &__img {
+            width: 100%;
+        }
+
+        &__info {
+            width: 100%;
+            padding: 3rem 0 0;
+        }
+    }
+
+}

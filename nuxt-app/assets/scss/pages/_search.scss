@@ -1,0 +1,22 @@
+.empty-search {
+  max-width: 250px;
+  text-align: center;
+  margin: 150px auto;
+
+  p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .empty-search {
+    margin: 100px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .empty-search {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,47 @@
+.user-details {
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+
+    &__item {
+        justify-content: space-between;
+        align-items: center;
+        font-family: "SF Pro Light", sans-serif;
+        font-size: 1.8rem;
+        padding: 2rem 4rem;
+        border-bottom: 1px solid $dark-grey;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    a {
+        font-family: "SF Pro Regular", sans-serif;
+        color: $green;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+}
+
+.edit-user-info {
+    text-align: right;
+
+    .btn {
+        i {
+            margin: 0 .5rem 0 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .user-details {
+        &__item {
+            font-size: 1.5rem;
+            padding: 1.2rem 2.4rem;
+        }
+    }
+}

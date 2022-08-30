@@ -1,0 +1,19 @@
+.fast-by {
+    padding: 2rem;
+    background-color: $light-grey;
+    border-radius: 3px;
+
+    &__title {
+        font-size: 1.6rem;
+    }
+
+    &__info {
+        font-family: "SF Pro Light", sans-serif;
+        font-size: 1.5rem;
+        margin: 1.2rem 0;
+    }
+
+    .phone-input {
+        margin-bottom: 2rem;
+    }
+}

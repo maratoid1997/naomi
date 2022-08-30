@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'FuturaPT';
+  font-display: swap;
+  src: url('assets/fonts/FuturaPT/FuturaPTLight.woff2') format('woff2'),
+       url('assets/fonts/FuturaPT/FuturaPTLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-display: swap;
+    src: url('assets/fonts/FuturaPT/FuturaPTBook.woff2') format('woff2'),
+         url('assets/fonts/FuturaPT/FuturaPTBook.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-display: swap;
+    src: url('assets/fonts/FuturaPT/FuturaPTCondMedium.woff2') format('woff2'),
+         url('assets/fonts/FuturaPT/FuturaPTCondMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-display: swap;
+    src: url('assets/fonts/FuturaPT/FuturaPTDemi.woff2') format('woff2'),
+         url('assets/fonts/FuturaPT/FuturaPTDemi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-display: swap;
+    src: url('assets/fonts/FuturaPT/FuturaPTBold.woff2') format('woff2'),
+         url('assets/fonts/FuturaPT/FuturaPTBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-display: swap;
+    src: url('assets/fonts/FuturaPT/FuturaPTCondExtraBold.woff2') format('woff2'),
+         url('assets/fonts/FuturaPT/FuturaPTCondExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+// Roboto ---------------------------------------------
+@font-face {
+    font-family: 'Roboto';
+    font-display: swap;
+    src: url('assets/fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+         url('assets/fonts/Roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-display: swap;
+    src: url('assets/fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'),
+         url('assets/fonts/Roboto/Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}

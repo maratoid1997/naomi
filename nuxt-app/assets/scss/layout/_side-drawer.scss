@@ -1,0 +1,69 @@
+.header.active {
+    .drawer {
+        height: calc(100vh - 60px);
+        opacity: 1;
+    }
+}
+
+.drawer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 5;
+    transition: .2s ease;
+
+    &__body {
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .search-form {
+        width: 100%;
+
+        .form-control {
+            padding: 1.5rem;
+        }
+    }
+}
+
+.drawer-actions {
+    border-bottom: 1px solid rgba($black, .15);
+
+    &__left,
+    &__right {
+        width: 50%;
+        padding: 15px;
+    }
+
+    ul {
+        li {
+            margin: 0 28px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__left {
+        font-size: 17px;
+        border-right: 1px solid rgba($black, .16);
+    }
+
+    .nuxt-link-exact-active,
+    .active {
+        color: $green;
+    }
+
+    .currencies {
+        .active {
+            color: $green;
+        }
+    }
+}

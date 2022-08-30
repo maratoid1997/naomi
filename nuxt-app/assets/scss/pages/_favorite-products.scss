@@ -1,0 +1,17 @@
+.empty-list {
+    font-size: 20px;
+}
+
+.grid-list {
+    [class*="col"] {
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-list {
+        [class*="col"] {
+            margin-bottom: 1.6rem;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cover-center {
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+.img-contained {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+.ptb-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+// -- static banner
+.bnr-with-product {
+    .col {
+        justify-content: space-between;
+    }
+
+    .product-card {
+        width: 20%;
+    }
+
+    .static-bnr {
+        width: calc(80% - 24px);
+    }
+}
+
+.static-bnr {
+    display: block;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+// -- pagination
+.pagination-container {
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    li {
+        position: relative;
+
+        &.active {
+            a {
+                color: $green;
+                opacity: 1;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: .5rem;
+                    right: .5rem;
+                    height: 1.5px;
+                    background: $green;
+                }
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        padding: 1rem 1.4rem;
+        opacity: .45;
+    }
+}
+
+@media (max-width: 767px) {
+    .pt-6 {
+        padding-top: 4rem;
+    }
+    
+    .pb-6 {
+        padding-bottom: 4rem;
+    }
+    
+    .ptb-6 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    // -- static banner
+    .bnr-with-product {
+        .product-card {
+            display: none;
+        }
+
+        .static-bnr {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    // static banner
+    .static-bnrs {
+        padding-bottom: 1.6rem;
+
+        [class*="col"] {
+            margin-bottom: 1.6rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.not-found {
+    max-width: 530px;
+    margin: 7rem auto 8rem auto;
+
+    p {
+        font-size: 2.2rem;
+        margin: 3rem 0;
+    }
+
+    .btn {
+        color: $green;
+        border-color: $green;
+
+        i {
+            margin: 0 1rem 0 0;
+        }
+
+        &:hover {
+            color: #fff;
+            background: $green;
+        }
+    }
+}

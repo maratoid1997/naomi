@@ -1,0 +1,277 @@
+@media (max-width: 1800px) {
+    .allHeader {
+        .subHeader {
+            .nav {
+                padding-right: 30px;
+                &__list {
+                    &-item {
+                        & + .nav__list-item {
+                            margin-left: 35px;
+                        }
+                        .dropdown_headerNav {
+                            .selected {
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 19px;
+                    }
+                }
+            }
+            .likesWrapper {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1700px) {
+    .allHeader {
+        .header {
+            .nav {
+                &__list {
+                    &-item {
+                        & + .nav__list-item {
+                            margin-left: 35px;
+                        }
+                    }
+                    &-link {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .searchInputWrapper {
+                .searchInput {
+                    width: 330px;
+                }
+            }
+            .dropdown_headerNav {
+                .selected {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1660px) {
+    .allHeader {
+        .subHeader {
+            .nav {
+                &__list {
+                    &-item {
+                        & + .nav__list-item {
+                            margin-left: 30px;
+                        }
+                        .dropdown_headerNav {
+                            .selected {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1590px) {
+    .allHeader {
+        .header {
+            .dropdown_currencyUnit {
+                margin-left: 30px;
+            }
+            .dropdown_user {
+                margin-left: 30px;
+            }
+        }
+        .subHeader {
+            .nav {
+                &__list {
+                    &-item {
+                        & + .nav__list-item {
+                            margin-left: 25px;
+                        }
+                        .dropdown_headerNav {
+                            .selected {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .allHeader {
+        .header {
+            .nav {
+                &__list {
+                    &-item {
+                        & + .nav__list-item {
+                            margin-left: 30px;
+                        }
+                    }
+                    &-link {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .dropdown_currencyUnit {
+                .selected {
+                    font-size: 16px;
+                }
+            }
+            .dropdown_headerNav {
+                .selected {
+                    font-size: 16px;
+                }
+            }
+            .searchInputWrapper {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1520px) {
+    .allHeader {
+        .subHeader {
+            padding: 20px 115px 20px 115px;
+            .nav {
+                &__list {
+                    &-item {
+                        .dropdown_headerNav {
+                            .selected {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    &-link {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1455px) {
+    .allHeader {
+        .header, .subHeader {
+            display: none;
+        }
+        .headerMini {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__logo {
+                margin-left: 50px;
+            }
+            .likesWrapper {
+                margin-right: 50px;
+            }
+            .basketWrapper {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .allHeader {
+        .headerMini {
+            padding: 14px 25px 12px 25px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .allHeader {
+        .headerMini {
+            height: 60px;
+            .hamburger {
+                width: 21px;
+                height: 20px;
+                span {
+                    height: 3px;
+                }
+            }
+            &__logo {
+                margin-left: 25px;
+                width: 54px;
+                height: 33px;
+            }
+            .likesWrapper {
+                margin-right: 25px;
+                .likes {
+                    width: 27px;
+                    height: 24px;
+                }
+            }
+            .basketWrapper {
+                margin-right: 25px;
+                .basket {
+                    width: 22px;
+                    height: 27px;
+                }
+            }
+            .likesWrapper, .basketWrapper {
+                span {
+                    width: 21px;
+                    height: 21px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    bottom: -8px;
+                }
+            }
+            .dropdown_userMini {
+                position: unset;
+                .dropdown__userIcon {
+                    width: 30px;
+                    height: 30px;
+                }
+                .optionsContainer {
+                    width: 100%;
+                    top: unset;
+                    right: unset;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .allHeader {
+        .headerMini {
+            padding: 14px 15px 12px 15px;
+            .hamburgerMenu {
+                width: 100%;
+                &__listWrapper {
+                    .hamburgerMenu {
+                        &__list {
+                            &-children {
+                                width: 100%;
+                                padding: 20px 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

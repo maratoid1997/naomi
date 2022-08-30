@@ -1,0 +1,141 @@
+.modal-backdrop {
+    background-color: rgba($black, .5);
+}
+
+.modal {
+    &-xl {
+        max-width: 89rem;
+    }
+
+    &-content {
+        border: 0;
+        border-radius: 3px;
+    }
+
+    &-header {
+        position: relative;
+        padding: 2.4rem 3rem;
+        border: none;
+
+        .close {
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            margin: 0;
+            color: transparent;
+            background: #fff url("~/assets/images/icons/cancel.svg") no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    &-title {
+        font-family: "SF Pro Medium", sans-serif;
+        font-size: 2.5rem;
+        line-height: 3.1rem;
+    }
+
+    &-body {
+        padding: 3rem;
+    }
+}
+
+.modal {
+    &-sm {
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-footer {
+            padding: 1.5rem;
+        }
+    }
+}
+
+// -- modal cart
+.modal-cart {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    margin: -3rem -3rem 3rem -3rem;
+    background-color: $light-grey;
+
+    .user-cart__icon {
+        svg {
+            fill: $orange;
+        }
+    }
+
+    .user-cart__items-count {
+        background-color: $orange;
+    }
+
+    .continue {
+        font-size: 1.8rem;
+        padding: 0;
+        color: $green;
+        background: transparent;
+
+        i {
+            margin-left: .8rem;
+        }
+    }
+}
+
+// -- modal content
+.modal-body-content {
+    display: flex;
+
+    .left {
+        width: 64%;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .right {
+        width: 36%;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal {
+        &-header {
+            padding: 1.5rem;
+    
+            .close {
+                right: 1.5rem;
+            }
+        }
+    
+        &-title {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+    
+        &-body {
+            padding: 1.5rem;
+        }
+    }
+
+    // -- modal cart
+    .modal-cart {
+        padding: 1.2rem 1.5rem;
+        margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    
+        .continue {
+            font-size: 1.5rem;
+        }
+    }
+
+    // -- modal content
+    .modal-body-content {
+        flex-direction: column;
+
+        .left {
+            width: 100%;
+            padding: 0 0 3rem 0;
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
+}

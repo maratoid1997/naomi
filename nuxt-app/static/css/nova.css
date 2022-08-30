@@ -1,0 +1,13 @@
+.td-fit .gg-duplicate {
+    color: transparent;
+    text-shadow: none;
+    outline: none;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/icons/duplicate.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+

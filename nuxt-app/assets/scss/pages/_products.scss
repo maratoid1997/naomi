@@ -1,0 +1,105 @@
+.products-content {
+    &__filters {
+        width: 20%;
+        padding-right: 12px;
+
+        .toggle-filters {
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 5rem;
+            height: 5rem;
+            top: calc(50% - 2.5rem);
+            right: -5rem;
+            background: #fff;
+            border-radius: 0 3px 3px 0;
+            box-shadow: 0 0 15px rgba($black, .35);
+            
+            img {
+                max-width: 2.2rem;
+            }
+        }
+    }
+
+    &__items {
+        width: 80%;
+        padding-left: 12px;
+
+        [class*="col"] {
+            margin-bottom: 2.4rem;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .products-content {
+        &__filters {
+            width: 25%;
+        }
+    
+        &__items {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .products-content {
+        &__filters {
+            width: 300px;
+        }
+    
+        &__items {
+            width: calc(100% - 300px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .products-content {
+        &__filters {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            background-color: rgba(#3A373E, .5);
+            transform: translateX(-100%);
+            z-index: 45;
+
+            .toggle-filters {
+                display: flex;
+            }
+
+            .section-header {
+                display: none;
+            }
+
+            &.active {
+                transform: translateX(0);
+                z-index: 55;
+
+                .toggle-filters {
+                    display: none;
+                }
+            }
+        }
+    
+        &__items {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .products-content {
+        &__items {
+            [class*="col"] {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}
